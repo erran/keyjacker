@@ -51,7 +51,6 @@ class Keyjacker
 
     return accounts
   end
-
 end
 
 puts Keyjacker.run.to_yaml

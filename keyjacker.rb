@@ -1,4 +1,4 @@
-class Keyjacker
+class KeyJacker
   require 'yaml'
 
   class << self
@@ -49,4 +49,4 @@ class Keyjacker
   end
 end
 
-puts Keyjacker.run.to_yaml
+puts KeyJacker.run.to_yaml

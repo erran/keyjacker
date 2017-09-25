@@ -7,5 +7,5 @@ Usage
 Run the following from any terminal with curl/ruby (default on most Macs).
 
 ```bash
-curl -L https://raw.github.com/ipwnstuff/keyjacker/master/keyjacker.rb | ruby
+curl -L https://raw.github.com/erran/keyjacker/master/keyjacker.rb | ruby
 ```
